@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>V_Form</title>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(), submitForm()">
+      <div id="container">
+        <h2>Login</h2>
+
+        <input
+          type="text"
+          placeholder="User Name"
+          id="username"
+          onkeydown="validateForm()"
+        /><br />
+        <p id="userError" class="error"></p>
+        <input
+          type="text"
+          placeholder="E-mail"
+          id="email"
+          onkeydown="validateForm()"
+        /><br />
+        <p id="emailError" class="error"></p>
+        <input
+          type="password"
+          placeholder="Password"
+          maxlength="4"
+          id="password"
+          onkeydown="validateForm()"
+        /><br />
+        <p id="passError" class="error"></p>
+        <input type="submit" id="btn" />
+      </div>
+    </form>
+    <script src="form.js"></script>
+  </body>
+</html>

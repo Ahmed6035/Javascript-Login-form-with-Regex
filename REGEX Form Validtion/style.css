@@ -1,0 +1,33 @@
+ body {
+        background-color: rgb(51, 156, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #container {
+        background-color: beige;
+        text-align: center;
+        padding: 50px;
+      }
+      h2 {
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+      }
+      input {
+        width: 200px;
+        margin: 10px 0px;
+        padding: 10px;
+      }
+      #btn{
+        width: 220px;
+        height: 30px;
+        background-color: rgb(30, 107, 97);
+        border: 5px;
+        color: white;
+      }
+      .error{
+          color: red;
+          margin: 0px;
+          text-align: left;
+      }
